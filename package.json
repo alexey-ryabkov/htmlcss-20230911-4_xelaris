@@ -1,7 +1,7 @@
 {
-  "name": "tasks-htmlcss",
+  "name": "modern-layouting-course-rasks",
   "version": "1.0.0",
-  "description": "Course Materials",
+  "description": "Components lib for Modern layouting course",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
     "start": "npm-run-all lint build show",
@@ -19,6 +19,9 @@
     "reinstall": "npm run clear && npm install",
     "prepare": "husky install"
   },
+  "engines": {
+    "node": ">=18.0.0 <19.0.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -29,8 +32,7 @@
     "**/*.{html}": "npm run format"
   },
   "keywords": [],
-  "author": "Sergey Zelenov",
-  "license": "ISC",
+  "author": "Alexey Ryabkov",
   "devDependencies": {
     "chai": "4.2.0",
     "cross-env": "7.0.2",
